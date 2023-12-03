@@ -12,7 +12,7 @@ SCRIPT
 
 $installtools = <<-SCRIPT
 echo -e "\n\n=== BASIC APT INSTALL ==="
-sudo apt install -y apt-transport-https wget build-essential libncursesw5-dev libssl-dev gpg libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev software-properties-common ca-certificates curl gnupg lsb-release jq gnupg software-properties-common build-essential checkinstall python3 python3-pip
+sudo apt install -y apt-transport-https wget build-essential libncursesw5-dev libssl-dev gpg libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev software-properties-common ca-certificates curl gnupg lsb-release jq gnupg software-properties-common build-essential checkinstall unzip python3 python3-pip
 echo -e "\n\n=== GitHub ==="
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg \
 && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg \
