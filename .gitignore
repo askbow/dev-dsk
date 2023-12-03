@@ -1,2 +1,5 @@
 # General
 .vagrant/
+
+# Secrets
+secrets.sh

@@ -1,0 +1,20 @@
+[core]
+        editor = nano -w
+[fetch]
+        prune = true
+[alias]
+        empty = git commit --allow-empty
+        st = status
+        logg = log --graph --decorate --oneline
+        cm = commit
+        df = diff
+        dfs = diff --staged
+[init]
+    defaultBranch = main
+[status]
+    short = true
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
